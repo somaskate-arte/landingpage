@@ -12,9 +12,11 @@
       align-items: center;
       background: #000;
     }
+
     .container {
       position: relative;
     }
+
     .container img {
       max-width: 100vw;
       max-height: 100vh;
@@ -22,19 +24,28 @@
       width: auto;
       display: block;
     }
+
+    /* LINK INVISÍVEL */
     .link {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: rgba(255,255,255,0.85);
-      padding: 12px 28px;
-      border-radius: 10px;
-      font-size: 22px;
+      
+      /* torna o botão invisível */
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      border: none;
       text-decoration: none;
-      color: #000;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
+      color: transparent;
+      font-size: 0;
+
+      /* define o tamanho da área clicável */
+      width: 200px;
+      height: 200px;
+
+      cursor: pointer;
     }
   </style>
 </head>
@@ -42,7 +53,9 @@
 
 <div class="container">
   <img src="13.jpg" alt="Imagem">
-  <a class="link" href="https://instagram.com/somaskatearte" target="_blank">Instagram</a>
+
+  <!-- Área clicável invisível -->
+  <a class="link" href="https://instagram.com/somaskatearte" target="_blank"></a>
 </div>
 
 </body>
