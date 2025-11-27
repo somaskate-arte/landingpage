@@ -24,29 +24,21 @@
         display: block;
     }
 
-    /* ÁREA CLICÁVEL CENTRAL (visível para ajuste) */
+    /* Área clicável central (40% x 40%) */
     #hover-link {
         position: absolute;
-
-        /* AJUSTE AQUI O TAMANHO DA ÁREA CLICÁVEL */
-        width: 40%;      
-        height: 30%;
-
-        /* Sempre centralizada */
+        width: 40%;
+        height: 40%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         cursor: pointer;
         text-decoration: none;
         z-index: 10;
-
-        /* 🔧 VISUALIZAÇÃO – Tire depois */
-        outline: 2px dashed red;
-        background: rgba(255, 0, 0, 0.25);
+        color: transparent;
     }
 
-    /* Troca a imagem ao passar mouse */
+    /* Troca a imagem ao passar o mouse */
     #hover-link:hover ~ #main-image {
         content: url("landing_2.jpg");
     }
